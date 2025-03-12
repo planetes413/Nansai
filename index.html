@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nansai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>일본 나이 및 연호 계산기</h1>
+        <div class="input-section">
+            <label for="birthdate">생년월일 (8자리):</label>
+            <input type="text" id="birthdate" name="birthdate" placeholder="YYYYMMDD (예: 20000413)" maxlength="8" pattern="\d{8}">
+            <button id="calculate">계산하기</button>
+        </div>
+        <div class="result-section" id="result">
+            <div id="age-result" class="hidden">
+                <h2>결과</h2>
+                <p>일본 나이: <span id="japanese-age"></span>세</p>
+                <p>연호: <span id="japanese-era"></span></p>
+                <p>당신은 <span id="era-age"></span>생입니다.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
